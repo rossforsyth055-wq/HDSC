@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Hearts Disabled Supporters Club{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with HDSC</p>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info-card">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Whether you have questions about membership, events, or accessibility, we're here to help.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:hdsc1874@gmail.com">hdsc1874@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Telephone</h3>
+                        <p><a href="tel:07807287031">07807 287031</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Facebook</h3>
+                        <p><a href="https://www.facebook.com/share/p/17wwwrfnns/" target="_blank">Follow us on Facebook</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Match Days</h3>
+                        <p>Find us at Tynecastle Park on home match days. At the junction of the Gorgie and Main stands.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h2>Send a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+    const mailtoLink = `mailto:hdsc1874@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+});
+</script>
+{% endblock %}

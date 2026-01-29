@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Membership - Hearts Disabled Supporters Club{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Membership</h1>
+    <p>Join our community of Hearts supporters</p>
+</section>
+
+<section class="membership-section">
+    <div class="container">
+        <div class="membership-intro">
+            <h2>Become a Member</h2>
+            <p>Membership is open to all disabled supporters of Heart of Midlothian FC, their families, carers, and friends who support our aims.</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Community Access</h3>
+                <p>Connect with fellow supporters and build lasting friendships.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Event Invitations</h3>
+                <p>Priority access to HDSC events and match day gatherings.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Newsletter</h3>
+                <p>Regular updates on club news, events, and accessibility improvements.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Your Voice</h3>
+                <p>Have your say on accessibility issues and club matters.</p>
+            </div>
+        </div>
+
+        <div class="membership-cta">
+            <h2>Ready to Join?</h2>
+            <p>Contact us to become a member. Membership is free!</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

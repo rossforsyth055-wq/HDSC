@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Events - Hearts Disabled Supporters Club{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Events</h1>
+    <p>Upcoming events and gatherings</p>
+</section>
+
+<section class="events-section">
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">TBC</span>
+                    <span class="month">2024</span>
+                </div>
+                <div class="event-details">
+                    <h3>Match Day Meet-Up</h3>
+                    <p>Join fellow HDSC members before the game for refreshments and chat.</p>
+                    <span class="event-location">Tynecastle Park</span>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">TBC</span>
+                    <span class="month">2024</span>
+                </div>
+                <div class="event-details">
+                    <h3>Social Evening</h3>
+                    <p>An evening of entertainment and celebration with the HDSC community.</p>
+                    <span class="event-location">Edinburgh</span>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">TBC</span>
+                    <span class="month">2024</span>
+                </div>
+                <div class="event-details">
+                    <h3>Annual General Meeting</h3>
+                    <p>Have your say on the future direction of the club.</p>
+                    <span class="event-location">TBC</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="events-cta">
+            <h2>Stay Updated</h2>
+            <p>Don't miss out on our events. Contact us to join our mailing list.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

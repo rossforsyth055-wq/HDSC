@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Donate - Hearts Disabled Supporters Club{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Support HDSC</h1>
+    <p>Help us make a difference</p>
+</section>
+
+<section class="donate-section">
+    <div class="container">
+        <div class="donate-intro">
+            <h2>Your Support Matters</h2>
+            <p>Your donations help us continue our work supporting disabled Hearts supporters. Every contribution, no matter the size, makes a real difference to our community.</p>
+        </div>
+
+        <div class="donate-uses">
+            <h2>How Your Donation Helps</h2>
+            <div class="uses-grid">
+                <div class="use-card">
+                    <h3>Events</h3>
+                    <p>Fund accessible events and social gatherings for our members.</p>
+                </div>
+                <div class="use-card">
+                    <h3>Accessibility</h3>
+                    <p>Support campaigns for improved accessibility at Tynecastle.</p>
+                </div>
+                <div class="use-card">
+                    <h3>Support Services</h3>
+                    <p>Provide assistance to members who need extra support on match days.</p>
+                </div>
+                <div class="use-card">
+                    <h3>Community</h3>
+                    <p>Build and maintain our community network and communications.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="donate-cta">
+            <h2>Make a Donation</h2>
+            <p>To make a donation, please contact us directly. We accept donations via bank transfer or cheque.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Contact Us to Donate</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

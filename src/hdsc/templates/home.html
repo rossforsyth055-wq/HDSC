@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Hearts Disabled Supporters Club{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Hearts Disabled Supporters Club</h1>
+    <p class="tagline">Supporting all Hearts fans together</p>
+    <a href="mailto:hdsc1874@gmail.com?subject=Membership%20Enquiry" class="btn btn-primary btn-large">Join Us</a>
+</section>
+
+<section class="intro-section">
+    <div class="container">
+        <h2>Welcome to HDSC</h2>
+        <p>We are a community of Heart of Midlothian supporters dedicated to ensuring that all fans, regardless of disability, can enjoy the beautiful game together. Our club provides support, organises events, and advocates for accessibility at Tynecastle Park and beyond.</p>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Community</h3>
+                <p>Connect with fellow Hearts supporters who understand and share your experiences.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Events</h3>
+                <p>Join us for match days, social gatherings, and special club events throughout the season.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Advocacy</h3>
+                <p>We work with the club to improve accessibility and ensure all fans are welcomed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Become a Member</h2>
+        <p>Join our growing community and be part of something special.</p>
+        <a href="{{ url_for('membership') }}" class="btn btn-secondary">Learn More</a>
+    </div>
+</section>
+{% endblock %}
