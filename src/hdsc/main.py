@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from pathlib import Path
 
-app = FastAPI(title="Hearts Accessible For All Supporters Club")
+app = FastAPI(title="Hearts for all")
 security = HTTPBasic()
 
 USERNAME = "marypoppins"
